@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latihan HTML Dasar</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Menghubungkan dengan css external -->
-  <link rel="stylesheet" href="styles.css">
-  
-</head>
-<body>
-  <!--Membuat elemen pertama tanpa atribut-->
-  <p>this is my first element</p>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://kit.fontawesome.com/db178a7078.js" crossorigin="anonymous"></script>
+  </head>
 
-  <!-- Membuat nesting element tanpa atribut -->
-  <p>This is my <strong>First Element</strong></p>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <div class="navbar">
+        <div class="logo"><a href="#">Sugi Almantara</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars" style="color: bisque;"></i>
+        </div>
+      </div>
 
-  <!-- Membuat void element tanpa atribut -->
-  <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+      <!-- Responsive Menu -->
+      <div class="dropdown_menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </div>
+    </header>
 
-  <!-- Membuat element dengan atribut -->
-  <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png" title="Mozzila Firefox Icon" alt="firefox-icon" width="25px" height="25px">
-  
-  <!-- Membuat hyperlink -->
-  <p><strong>Hyperlink</strong></p>
-  <p>Link to 
-  <a href="https://www.google.com/" target="_blank" title="Google">Google</a>
-  </p>
+    <main>
+      <section id="judul">
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> In consequuntur odio, enim eos ratione culpa similique accusantium cupiditate <br> nesciunt quo fugit sed nobis numquam sit, 
+          dolore mollitia, deserunt ea ipsum?</p>
+      </section>
+    </main>
+    
+  </body>
 
-  <!-- Boolean atribut -->
-  <p><strong>Boolean Atribut</strong></p>
-  <p>Enable input text <input type="text"> </p>
-  <p>Disabled input text <input type="text" disabled> </p>
+  <!-- Javascript Hamburger Menu -->
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
 
-</body>
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen  
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
+
 </html>

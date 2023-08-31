@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  height: 100vh;
+  background-color: #000;
+  background-image: url(../img/marek-piwnicki-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+a:hover{
+  color: orange;
+}
+
+header{
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .navbar{
+  background-color: #04AA6D;
+}
+
+.navbar .logo a{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: bisque;
+}
+
+.navbar .links{
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle_btn{
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Judul */
+section#judul{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+#judul h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+/* Dropdown Menu */
+.dropdown_menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  widows: 300px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+.dropdown_menu.open{
+  height: auto;
+}
+
+.dropdown_menu li{
+  width: unset;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .navbar .links{
+    display: none;
+  }
+
+  .navbar .toggle_btn{
+    display: block;
+  }
+
+  .dropdown_menu{
+    display: block;
+  }
+}
+
+@media (max-width: 576px){
+  .dropdown_menu{
+    left: 2rem;
+    width: unset;
+  }
+}
+
+@media (max-width: 1920px){
+  .dropdown_menu{
+    left: 2rem;
+    width: unset;
+  }
+}
+
+
+
+
+
+/* .carousel-item {
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg-cover {
+  background-size: cover !important;
+}
+
+body {
+  min-height: 100vh;
+} */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+.imgnav{
+    float: left;
+    height: 48px;
+    width: auto;
+    
+}

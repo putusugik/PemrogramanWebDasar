@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan HTML Dasar</title>
+
+    <!-- Menghubungkan dengan css external -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <section>
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="pages/news.html">News</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/about.html">About</a>
+      </div>
+    </section>
+
+    <!--Membuat elemen pertama tanpa atribut-->
+    <p>this is my first element</p>
+
+    <!-- Membuat nesting element tanpa atribut -->
+    <p>This is my <strong>First Element</strong></p>
+
+    <!-- Membuat void element tanpa atribut -->
+    <img
+      src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"
+    />
+
+    <!-- Membuat element dengan atribut -->
+    <img
+      src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"
+      title="Mozzila Firefox Icon"
+      alt="firefox-icon"
+      width="25px"
+      height="25px"
+    />
+
+    <!-- Membuat hyperlink -->
+    <p><strong>Hyperlink</strong></p>
+    <p>
+      Link to
+      <a href="https://www.google.com/" target="_blank" title="Google"
+        >Google</a
+      >
+    </p>
+
+    <!-- Boolean atribut -->
+    <p><strong>Boolean Atribut</strong></p>
+    <p>Enable input text <input type="text" /></p>
+    <p>Disabled input text <input type="text" disabled /></p>
+
+    <!-- Membuat daftar/list -->
+    <!-- Unordered list -->
+    <strong>List Sarapan</strong>
+    <ul>
+      <li>susu</li>
+      <li>telur</li>
+      <li>roti</li>
+      <li>bubur</li>
+    </ul>
+
+    <!-- Ordered list -->
+    <strong>Cara memasak mie</strong>
+    <ol>
+      <li>Buka bungkus mie</li>
+      <li>Panaskan air</li>
+      <li>Tuang mie ke dalam panci</li>
+      <li>Tunggu 3 menit hingga matang</li>
+      <li>Tiriskan dan tuang mie kedalam wadah beserta bumbu</li>
+      <li>Mie siap disantap</li>
+    </ol>
+
+    <!-- Nesting list -->
+    <strong>Cara memasak mie</strong>
+    <ol>
+      <li>Buka bungkus mie</li>
+      <li>Panaskan air</li>
+      <li>Tuang mie ke dalam panci</li>
+      <li>
+        Tunggu 3 menit hingga matang
+        <ul>
+          <li>
+            Jika ingin membuat mie nyemek tambahkan bawang putih dan cabai yang
+            telah dicincang
+          </li>
+          <li>Jika tidak lanjutkan ke tahap 5</li>
+        </ul>
+      </li>
+      <li>Tiriskan dan tuang mie kedalam wadah beserta bumbu</li>
+      <li>Mie siap disantap</li>
+    </ol>
+
+    <!-- Membuat hyperlink -->
+    <p>
+      Menuju halaman untuk
+      <a href="https://www.mozilla.org/firefox/">Download Firefox</a>
+    </p>
+
+    <!-- Hyperlink untuk download sebuah file yang terdapat pada sub-direktori -->
+    <p>
+      <a href="/pdfs/project-brief.pdf" download="project-brief.pdf">
+        Download Project Brief (PDF, 10MB)
+      </a>
+    </p>
+
+    <!-- Hyperlink menuju website external -->
+    <p>
+      <a href="https://www.youtube.com/watch?v=lcw-IZhY0RQ" target="_blank">
+        Watch the video (stream opens in separate tab, HD quality)
+      </a>
+    </p>
+
+    <!-- Membuat hyperlink mengirim pesan melalui email -->
+    <a href="mailto:info@ppb.ac.id">Send email to Poltekpar Bali</a>
+
+    <!-- Membuat hyperlink mengirim pesan dengan cc, bcc, subject dan pesan -->
+    <a
+      target="_blank" href="mailto:info@ppb.ac.id?cc=info2@ppb.ac.id&bcc=info3@ppb.ac.id&subject=Subject%20of%20the%20email&body=The%20body%20of%20the%20email"
+    >
+     <p> Send mail with cc, bcc, subject and body</p>
+    </a>
+
+    <h1>Ini Judul Artikel</h1>
+    <h2>Ini Sub Judul Artikel</h2>
+    <p>Ini Paragraf</p>
+    <img src="Gambarnya.jpg" alt="Gambarnya">
+    <a href="https://www.ppb.ac.id">Poltekpar Bali</a>
+
+  </body>
+</html>
