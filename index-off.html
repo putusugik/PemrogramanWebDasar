@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <!-- CSS External -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/db178a7078.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS Internal -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo"><a href="#">Sugi Almantara</a></div>
+      <ul class="links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">What I Do</a></li>
+        <li><a href="#">My Work</a></li>
+      </ul>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars" style="color: bisque"></i>
+      </div>
+    </div>
+
+    <!-- Responsive Menu -->
+    <div class="dropdown_menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#">What I Do</a></li>
+      <li><a href="#">My Work</a></li>
+    </div>
+
+    <!--Title-->
+    <div class="flex-container">
+      <section id="judul">
+        <img src="https://www.instagram.com/p/CUjKMY9Pd_6/" alt="" />
+        <h1>Hi, Saya Sugik!</h1>
+        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> In consequuntur odio, enim eos ratione culpa similique accusantium cupiditate <br> nesciunt quo fugit sed nobis numquam sit, 
+            dolore mollitia, deserunt ea ipsum?</p> -->
+        <br />
+        <p id="time"></p>
+        <p id="date"></p>
+      </section>
+    </div>
+
+    <div class="bodyabout">
+      <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla assumenda, consectetur autem sit ullam quibusdam, ut culpa alias repellendus earum odit modi corrupti quas accusamus architecto consequuntur officiis? Hic eos impedit sed, illum, ab tenetur ipsum minus eius consectetur eveniet aut nemo, et repellat a porro cumque deleniti ullam? Veniam sapiente rem saepe amet itaque nisi dolor officia, in voluptates maxime odio inventore unde eius quisquam numquam dolore possimus aut hic dolorum! Velit vero consectetur alias repudiandae, inventore molestias maxime hic architecto explicabo non repellendus soluta perspiciatis quasi, asperiores totam dolore officiis sint excepturi assumenda expedita enim omnis doloribus. Soluta blanditiis inventore rerum aliquid cumque dolores at explicabo consequatur repellendus assumenda, consectetur perspiciatis laborum iure sunt officiis, amet nam in, dolore sint veniam quae unde quod provident autem. Ad quia illo, corrupti quae quibusdam nostrum eum cupiditate iusto aut. Doloremque aspernatur molestias deleniti, consequatur praesentium quas corrupti, ad ratione placeat eum provident veniam quisquam dicta nesciunt delectus, eveniet saepe aliquam distinctio. Sequi, ipsam. Tenetur, nemo soluta! Nemo, repellat alias accusantium debitis hic vitae architecto accusamus dolores molestiae fugit quas commodi doloribus iste labore est aperiam nulla culpa repellendus, animi eos dolorum praesentium, illo velit. Nihil facilis odit ullam voluptatibus?</p>
+    </div>
+    <div class="body-home">
+      
+    </div>
+
+  </body>
+
+  <!-- Javascript Hamburger Menu -->
+  <script>
+    const toggleBtn = document.querySelector(".toggle_btn");
+    const toggleBtnIcon = document.querySelector(".toggle_btn i");
+    const dropDownMenu = document.querySelector(".dropdown_menu");
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle("open");
+      const isOpen = dropDownMenu.classList.contains("open");
+
+      toggleBtnIcon.classList = isOpen
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars";
+    };
+
+    window.setInterval(ut, 1000);
+
+    function ut() {
+      var d = new Date();
+      document.getElementById("time").innerHTML = d.toLocaleTimeString();
+      document.getElementById("date").innerHTML = d.toLocaleDateString();
+    }
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.1.0.min.js"
+    integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+    crossorigin="anonymous"
+  ></script>
+</html>

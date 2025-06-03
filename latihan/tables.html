@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Table HTML</title>   
+    
+</head>
+
+<body>
+    <!-- Basic Table -->
+    <table>
+        <td>Ini cell pertama!</td>
+        <td>Ini cell kedua!</td>
+        <td>Ini cell ketiga!</td>
+        <td>Ini cell keempat!</td>
+    </table>
+
+    <hr>
+
+    <!-- Basic Row Table -->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <td>Ini Baris pertama!</td>
+            <td>Ini cell kedua!</td>
+            <td>Ini cell ketiga!</td>
+            <td>Ini cell keempat!</td>
+        </tr>
+        <tr>
+            <td>Ini Baris Kedua!</td>
+            <td>Ini cell kedua!</td>
+            <td>Ini cell ketiga!</td>
+            <td>Ini cell keempat!</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Basic Table With Header -->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Mata Kuliah</th>
+            <th>Kelas</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Yusuf Firmansyah</td>
+            <td>PAK</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Muhammad Kristian</td>
+            <td>PAK</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Putu Chong Wei</td>
+            <td>PAK</td>
+            <td>C</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Basic Table with multiple rows and columns -->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th colspan="2">Mata Kuliah & Kelas</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Yusuf Firmansyah</td>
+            <td rowspan="3" align="center">PAK</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Muhammad Kristian</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Putu Chong Wei</td>
+            <td>C</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Basic Table with common styling not ideal-->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th style="background-color: aqua;">No</th>
+            <th style="background-color: aqua;">Nama</th>
+            <th style="background-color: blue;" colspan="2">Mata Kuliah & Kelas</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Yusuf Firmansyah</td>
+            <td rowspan="3" align="center">PAK</td>
+            <td  style="background-color:chocolate">A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Muhammad Kristian</td>
+            <td style="background-color:chocolate">B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Putu Chong Wei</td>
+            <td style="background-color:chocolate">C</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Basic Table with common styling ideal with col-->
+    <table border="1" cellspacing="0" cellpadding="5">
+        <col />
+        <col style="background-color: aquamarine;" />
+        <col />
+        <col style="background-color:chocolate" />
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th colspan="2">Mata Kuliah & Kelas</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Yusuf Firmansyah</td>
+            <td rowspan="3" align="center">PAK</td>
+            <td >A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Muhammad Kristian</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Putu Chong Wei</td>
+            <td>C</td>
+        </tr>
+    </table>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+}
+
+.bg-main {
+  height: 100vh;
+  background-image: url("../img/marek-piwnicki-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-main h1{
+  padding-top: 10px;
+}
+.bg-main h2{
+  margin-top: 5px;
+}
+
+.bg-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.bg-about {
+  height: 100vh;
+  background-image: url("../img/marek-piwnicki-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0px 0px;
+}
+
+.bg-task{
+  background-image: url("../img/marek-piwnicki-unsplash.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+  margin: 0px 0px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.left {
+  text-align: center;
+  width: 15%;
+  height: 80vh;
+}
+
+.right {
+  width: 75%;
+  height: 80vh;
+}
+
+.body-about {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: auto;
+  
+  overflow: auto;
+  padding: 5px 20px;
+  line-height: 25px;
+  border-radius: 25px;
+}
+
+.sc-main {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 95%;
+  margin: auto;
+}
+
+article{
+  padding: 0px 50px;
+}
+
+.sc-main h2 {
+  text-align: left;
+  color: black;
+}
+
+.body-about h2 {
+  color: black;
+  text-align: left;
+  margin: 10px 0px;
+}
+.artic img {
+  display: block;
+  width: 40%;
+  height: 43%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  width: 900px;
+  margin: 100px auto;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.2);
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 5px 7px 40px 11px rgba(0, 0, 0, 0.73);
+  text-shadow: 3px 2px 0px rgba(13, 12, 12, 0.3);
+  border-radius: 25px;
+}
+
+div.about-item {
+  display: inline-flex;
+  width: 150px;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 5px 7px 40px 11px rgba(0, 0, 0, 0.73);
+  text-shadow: 3px 2px 0px rgba(13, 12, 12, 0.3);
+  border-radius: 25px;
+}
+
+.menu-gallery a {
+  color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  text-shadow: 3px 2px 0px rgba(13, 12, 12, 0.3);
+  font-size: larger;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1px 0px;
+  text-align: center;
+  color: white;
+}
+
+td {
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+}
+
+td.style {
+  font-weight: bold;
+}
+
+.head-about h1,
+.head-about h2 {
+  text-align: center;
+}
+
+div.menu-gallery img {
+  width: 100px;
+  height: 100px;
+}
+
+div.head-about .about-item .menu-gallery img {
+  width: 50px;
+  height: 50px;
+}
+
+.container{
+  width: 605px;
+  margin: auto auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.forms{
+  margin: 10px 5px;
+  padding: 5px 0px 0px 5px;
+  text-align: left;
+  
+}
+
+.forms label{
+  display: block;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  color: white;
+  margin: 5px 0px 5px 0px;
+}
+
+.colform input{
+  margin: 5px 1px;
+  width: 273px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 3px solid whitesmoke;
+  padding: 0px 5px;
+  font-size: 0.9rem;
+}
+
+.fullform input{
+  margin: 5px 1px;
+  width: 566px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  border: 3px solid whitesmoke;
+  padding: 0px 5px;
+  font-size: 0.9rem;
+}
+
+::placeholder{
+  color: black;
+}
+
+.colform select{
+  display: inline-block;
+  margin: 5px 1px;
+  width: 286px;
+  height: 41px;
+  border-radius: 5px;
+  border: 3px solid whitesmoke;
+  padding: 0px 5px;
+  font-size: 0.9rem;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.butform button{
+  margin: 5px 1px 0 0px;
+  width: 579px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color:rgb(0, 0, 152);
+  color: white;
+  padding: 0px 5px;
+  font-size: 0.9rem;
+}
+
+.butform button:hover{
+  background-color: rgb(0, 0, 255);
+}

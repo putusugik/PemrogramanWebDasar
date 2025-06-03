@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Webinar</title>
+    <!-- <link rel="stylesheet" href="../css/stylesform.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Webinar Registration</h1>
+        <div class="forms">
+            <form action="#" method="post">
+                <div class="colform">
+                    <label for="fname">Name:<span style="color: red;">*</span></label>
+                    <input class="col" type="text" placeholder="First name" name="fname" id="fname" required>
+                    <input type="text" placeholder="Last name" name="lname" id="lname" required>
+                </div>
+
+                <div class="fullform">
+                    <label for="email">Email:<span style="color: red;">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="jack@example.com" required>
+                    
+                    <label for="cname">Company Name:<span style="color: red;">*</span></label>
+                    <input type="text" name="cname" id="cname" required>
+                    
+                    <label for="cweb">Company Website:<span style="color: red;">*</span></label>
+                    <input type="url" name="cweb" id="cweb" placeholder="https://example.com" required>
+                </div>
+                <div class="colform">
+                    <label for="addr">Address:<span style="color: red;">*</span></label>
+                    <input type="text" name="addr" id="addr" placeholder="Street Address" required>
+                    <input type="text" name="saddr" id="saddr" placeholder="Apartment, suite, etc" required>
+                    <input type="text" name="city" id="city" placeholder="City" required>
+                    <input type="text" name="state" id="state" placeholder="State" required>
+                    <input type="text" name="pcode" id="pcode" placeholder="Postal Code" required>
+                    <select name="nation" id="nation" required>
+                        <option value="Indonesia">1</option>
+                        <option value="Malaysia">2</option>
+                        <option value="Singapore">3</option>
+                        <option value="Thailand">4</option>
+                        <option value="Myanmar">5</option>
+                    </select>
+                </div>
+                <div class="butform">
+                    <button type="submit">Register</button>
+                    <button type="reset" style="background-color: red;">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

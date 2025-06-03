@@ -1,67 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Website</title>
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://kit.fontawesome.com/db178a7078.js" crossorigin="anonymous"></script>
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traning Website</title>
+</head>
+<body>
     <header>
-      <!-- Navbar -->
-      <div class="navbar">
-        <div class="logo"><a href="#">Sugi Almantara</a></div>
-        <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="toggle_btn">
-          <i class="fa-solid fa-bars" style="color: bisque;"></i>
-        </div>
-      </div>
-
-      <!-- Responsive Menu -->
-      <div class="dropdown_menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </div>
+        <nav>
+            <a href="#">
+                <img src="img/logo.png" alt="Logo Poltekpar Bali">
+            </a>
+            <ul>
+                <li>
+                    <a href="pages/tentang.html">Tentang</a>
+                </li>
+                <li>
+                    <a href="pages/programstudi.html">Program Studi</a>
+                </li>
+                <li>
+                    <a href="pages/ppid.html">PPID</a>
+                </li>
+                <li>
+                    <a href="pages/event.html">Event</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-      <section id="judul">
-        <h1>Welcome</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> In consequuntur odio, enim eos ratione culpa similique accusantium cupiditate <br> nesciunt quo fugit sed nobis numquam sit, 
-          dolore mollitia, deserunt ea ipsum?</p>
-      </section>
+        <hr>
+        <img src="img/mainimage.jpeg" alt="Main Image" style="margin-left: auto; margin-right: auto; display: block;">
+        <hr>
     </main>
-    
-  </body>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Tentang</a>
+                    </li>
+                    <li>
+                        <a href="#">Program Studi</a>
+                    </li>
+                    <li>
+                        <a href="#">PPID</a>
+                    </li>
+                    <li>
+                        <a href="#">Event</a>
+                    </li>
+                </ul>
+            </nav>
+        <p>Copyright © 2023 Mahasiswa Manajemen Akuntansi Hospitaliti - All Right Reserved.</p>
+        </footer>
 
-  <!-- Javascript Hamburger Menu -->
-  <script>
-    const toggleBtn = document.querySelector('.toggle_btn')
-    const toggleBtnIcon = document.querySelector('.toggle_btn i')
-    const dropDownMenu = document.querySelector('.dropdown_menu')
-
-    toggleBtn.onclick = function () {
-      dropDownMenu.classList.toggle('open')
-      const isOpen = dropDownMenu.classList.contains('open')
-
-      toggleBtnIcon.classList = isOpen  
-      ? 'fa-solid fa-xmark'
-      : 'fa-solid fa-bars'
-    }
-  </script>
-
+        <script src="js/main.js"></script>
+</body>
 </html>

@@ -5,13 +5,19 @@
   font-family: sans-serif;
 }
 
-body{
-  height: 100vh;
+div{
+  display: block;
+}
+
+.flex-container{
+  height: calc(100vh + 60px);
+  margin-top: -60px;
   background-color: #000;
   background-image: url(../img/marek-piwnicki-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
+
 
 li{
   list-style: none;
@@ -27,27 +33,27 @@ a:hover{
   color: orange;
 }
 
-header{
+/* header{
   position: relative;
   padding: 0 2rem;
-}
+  background-color: #000;
+} */
 
 .navbar{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  display: flex;
   width: 100%;
   height: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav .navbar{
-  background-color: #04AA6D;
-}
-
-.navbar .logo a{
-  font-size: 1.5rem;
+ .logo a{
+  display: flex;
+  margin-left: 10px;
+  font-size: 1.50rem;
   font-weight: bold;
   color: bisque;
 }
@@ -55,13 +61,21 @@ nav .navbar{
 .navbar .links{
   display: flex;
   gap: 2rem;
+  margin-right: 50px;
+}
+
+.navbar .links a{
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .navbar .toggle_btn{
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
+  margin-right: 20px;
   display: none;
+  
 }
 
 /* Judul */
@@ -82,10 +96,43 @@ section#judul{
   font-weight: bold;
 }
 
+/* Judul */
+section#about{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #0a0f2e;
+}
+
+.p-about{
+  background-color: rgba(255, 255, 255, 0.639);
+
+}
+
+#judul h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.body2{
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
 
 /* Dropdown Menu */
 .dropdown_menu{
-  display: none;
+  
   position: absolute;
   right: 2rem;
   top: 60px;
@@ -98,12 +145,17 @@ section#judul{
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 }
 
+.dropdown_menu a{
+  font-size: 1.25rem;
+}
+
 .dropdown_menu.open{
   height: auto;
 }
 
 .dropdown_menu li{
   width: unset;
+  font-size: 10px;
   padding: 0.7rem;
   display: flex;
   align-items: center;
@@ -111,8 +163,9 @@ section#judul{
 }
 
 @media (max-width: 992px) {
-  .navbar .links{
+  .navbar .links a{
     display: none;
+    font-size: 2vw;
   }
 
   .navbar .toggle_btn{
@@ -129,6 +182,10 @@ section#judul{
     left: 2rem;
     width: unset;
   }
+  .navbar .links a{
+    display: none;
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 1920px){
@@ -136,7 +193,23 @@ section#judul{
     left: 2rem;
     width: unset;
   }
+  
 }
+
+#time {
+  font-family: 'Nova Mono', monospace;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 0px 0px 20px;
+}
+
+#date {
+  font-family: 'Eczar', serif;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgb(233, 233, 233);
+}
+
 
 
 
@@ -194,3 +267,6 @@ body {
     width: auto;
     
 }
+
+
+

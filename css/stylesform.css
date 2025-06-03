@@ -1,0 +1,83 @@
+*{
+    padding: 0 ;
+}
+
+.container{
+    width: 605px;
+    margin: auto auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.forms{
+    margin: 10px 5px;
+    padding: 5px 0px 0px 5px;
+    text-align: left;
+    
+}
+
+.forms label{
+    display: block;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    color: white;
+    margin: 5px 0px 5px 0px;
+}
+
+.colform input{
+    margin: 5px 1px;
+    width: 273px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid whitesmoke;
+    padding: 0px 5px;
+    font-size: 0.9rem;
+}
+
+.fullform input{
+    margin: 5px 1px;
+    width: 566px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    border: 3px solid whitesmoke;
+    padding: 0px 5px;
+    font-size: 0.9rem;
+}
+
+::placeholder{
+    color: black;
+}
+
+.colform select{
+    display: inline-block;
+    margin: 5px 1px;
+    width: 286px;
+    height: 41px;
+    border-radius: 5px;
+    border: 3px solid whitesmoke;
+    padding: 0px 5px;
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.butform button{
+    margin: 5px 1px 0 0px;
+    width: 579px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color:rgb(0, 0, 152);
+    color: white;
+    padding: 0px 5px;
+    font-size: 0.9rem;
+}
+
+.butform button:hover{
+    background-color: rgb(0, 0, 255);
+}
+
+  

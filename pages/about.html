@@ -4,19 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css" />
-
+    <!-- CSS External -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/db178a7078.js" crossorigin="anonymous"></script>
+    
     <title>About</title>
+
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <section>
-        <div class="topnav">
-          <a href="../index.html">Home</a>
-          <a href="news.html">News</a>
-          <a href="contact.html">Contact</a>
-          <a class="active" href="#about">About</a>
+    <div class="bodyabout">
+      <header>
+        <!-- Navbar -->
+        <div class="navbar">
+          <div class="logo"><a href="#">Sugi Almantara</a></div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars" style="color: bisque;"></i>
+          </div>
         </div>
+
+        <!-- Responsive Menu -->
+        <div class="dropdown_menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </div>
+      </header>
+
+      <!--Title-->    
+      <section id="about">
+        <h1>About Us</h1>
+        <p class="p-about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> In consequuntur odio, enim eos ratione culpa similique accusantium cupiditate <br> nesciunt quo fugit sed nobis numquam sit, 
+          dolore mollitia, deserunt ea ipsum?</p>
       </section>
-    <p>This is about page</p>
+    </div>
 </body>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle_btn')
+  const toggleBtnIcon = document.querySelector('.toggle_btn i')
+  const dropDownMenu = document.querySelector('.dropdown_menu')
+
+  toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen  
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+  }
+
+  window.setInterval(ut, 1000);
+
+  function ut() {
+  var d = new Date();
+  document.getElementById("time").innerHTML = d.toLocaleTimeString();
+  document.getElementById("date").innerHTML = d.toLocaleDateString();
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous">
+</script>
 </html>
